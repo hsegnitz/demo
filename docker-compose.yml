@@ -1,0 +1,78 @@
+version: '3.3'
+
+services:
+    billing-application:
+        image: php:7.3-apache
+        ports:
+            - "8110:80"
+        volumes:
+            - type: bind
+              source: ./billing_application/
+              target: /var/www/html
+              read_only: true
+        environment:
+            SOARCE_APPLICATION_NAME: "billingApplication"
+            SOARCE_PRESHARED_SECRET: "K25NZK0whQeu~**qbp0"
+        links:
+            - client
+            - invoice
+        networks:
+            default:
+                aliases:
+                    - soarce-demo.local
+    adding:
+        image: php:7.2-apache
+        ports:
+            - "8111:80"
+        volumes:
+            - type: bind
+              source: ./adding_service/
+              target: /var/www/html
+              read_only: true
+        environment:
+            SOARCE_APPLICATION_NAME: "addingService"
+            SOARCE_PRESHARED_SECRET: "j7eS@&w5.MtHTNdPl(7m"
+        networks:
+            default:
+                aliases:
+                    - soarce-demo.local
+
+    client:
+        image: php:7.2-apache
+        ports:
+            - "8112:80"
+        volumes:
+            - type: bind
+              source: ./client_service/
+              target: /var/www/html
+              read_only: true
+        environment:
+            SOARCE_APPLICATION_NAME: "clientService"
+            SOARCE_PRESHARED_SECRET: "P{SN=9^Fzf4J.Xm_<O,j"
+        networks:
+            default:
+                aliases:
+                    - soarce-demo.local
+
+    invoice:
+        image: php:7.2-apache
+        ports:
+            - "8113:80"
+        volumes:
+            - type: bind
+              source: ./invoice_service/
+              target: /var/www/html
+              read_only: true
+        environment:
+            SOARCE_APPLICATION_NAME: "invoiceService"
+            SOARCE_PRESHARED_SECRET: "{&O0R?M,;u&=N.R%XDRl"
+        links:
+            - adding
+        networks:
+            default:
+                aliases:
+                    - soarce-demo.local
+
+networks:
+    soarce_default:
+        external: true

@@ -1,0 +1,12 @@
+{
+    "repositories": [
+      { "type": "vcs", "url": "/home/hsegnitz/Projects/SOARCE/client" }
+    ],
+    "require": {
+        "herzult/simple-php-easy-plus": "dev-master"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master",
+        "soarce/client": "dev-request-auto-linking"
+    }
+}
