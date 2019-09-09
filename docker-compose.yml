@@ -2,7 +2,7 @@ version: '3.3'
 
 services:
     billing-application:
-        image: php:7.3-apache
+        build: billing_application/.
         ports:
             - "8110:80"
         volumes:
@@ -21,7 +21,7 @@ services:
                 aliases:
                     - soarce-demo.local
     adding:
-        image: php:7.2-apache
+        build: adding_service/.
         ports:
             - "8111:80"
         volumes:
@@ -38,7 +38,7 @@ services:
                     - soarce-demo.local
 
     client:
-        image: php:7.2-apache
+        build: client_service/.
         ports:
             - "8112:80"
         volumes:
@@ -55,7 +55,7 @@ services:
                     - soarce-demo.local
 
     invoice:
-        image: php:7.2-apache
+        build: invoice_service/.
         ports:
             - "8113:80"
         volumes:
