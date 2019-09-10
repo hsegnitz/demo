@@ -26,6 +26,7 @@ function getInvoice($id)
         'state' => $faker->state,
         'city' => $faker->city,
         'email' => $faker->companyEmail,
+        'date' => $faker->date(),
         'items' => $items,
         'net' => array_sum(array_column($items, 'netLinePrice')),
         'gross' => $gross,
