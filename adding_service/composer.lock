@@ -367,7 +367,7 @@
             "source": {
                 "type": "git",
                 "url": "/home/hsegnitz/Projects/SOARCE/client",
-                "reference": "ee0e40760e2187a081431a84f7b1dbce9ba3a93d"
+                "reference": "3dfaa924597ba48dcd785b2757878b99006523b5"
             },
             "require": {
                 "ext-json": "*",
@@ -428,7 +428,7 @@
                 "source": "https://github.com/soarce-qa/soarce-client-php",
                 "docs": "https://github.com/soarce-qa/soarce-client-php/wiki"
             },
-            "time": "2019-09-08T13:28:13+00:00"
+            "time": "2019-09-09T20:58:19+00:00"
         }
     ],
     "aliases": [],
