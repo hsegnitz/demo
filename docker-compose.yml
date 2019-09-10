@@ -10,6 +10,10 @@ services:
               source: ./billing_application/
               target: /var/www/html
               read_only: true
+            - type: bind
+              source: ./billing_application/.docker/docker-php.ini
+              target: /usr/local/etc/php/conf.d/docker-php.ini
+              read_only: true
         environment:
             SOARCE_APPLICATION_NAME: "billingApplication"
             SOARCE_PRESHARED_SECRET: "K25NZK0whQeu~**qbp0"
@@ -20,6 +24,8 @@ services:
             default:
                 aliases:
                     - soarce-demo.local
+            soarce_default:
+
     adding:
         build: adding_service/.
         ports:
@@ -29,6 +35,10 @@ services:
               source: ./adding_service/
               target: /var/www/html
               read_only: true
+            - type: bind
+              source: ./adding_service/.docker/docker-php.ini
+              target: /usr/local/etc/php/conf.d/docker-php.ini
+              read_only: true
         environment:
             SOARCE_APPLICATION_NAME: "addingService"
             SOARCE_PRESHARED_SECRET: "j7eS@&w5.MtHTNdPl(7m"
@@ -36,6 +46,7 @@ services:
             default:
                 aliases:
                     - soarce-demo.local
+            soarce_default:
 
     client:
         build: client_service/.
@@ -46,6 +57,10 @@ services:
               source: ./client_service/
               target: /var/www/html
               read_only: true
+            - type: bind
+              source: ./client_service/.docker/docker-php.ini
+              target: /usr/local/etc/php/conf.d/docker-php.ini
+              read_only: true
         environment:
             SOARCE_APPLICATION_NAME: "clientService"
             SOARCE_PRESHARED_SECRET: "P{SN=9^Fzf4J.Xm_<O,j"
@@ -53,6 +68,7 @@ services:
             default:
                 aliases:
                     - soarce-demo.local
+            soarce_default:
 
     invoice:
         build: invoice_service/.
@@ -63,6 +79,10 @@ services:
               source: ./invoice_service/
               target: /var/www/html
               read_only: true
+            - type: bind
+              source: ./invoice_service/.docker/docker-php.ini
+              target: /usr/local/etc/php/conf.d/docker-php.ini
+              read_only: true
         environment:
             SOARCE_APPLICATION_NAME: "invoiceService"
             SOARCE_PRESHARED_SECRET: "{&O0R?M,;u&=N.R%XDRl"
@@ -72,6 +92,7 @@ services:
             default:
                 aliases:
                     - soarce-demo.local
+            soarce_default:
 
 networks:
     soarce_default:
