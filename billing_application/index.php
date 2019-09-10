@@ -2,14 +2,19 @@
 
 require_once 'vendor/autoload.php';
 
-// paginate through endless list of clients
+$action = $_GET['action'] ?? 'home';
 
-// detail view of client with list of invoices
-
-// detail view of invoice
-
-
-$client = json_decode(file_get_contents('http://client/?client=42'), JSON_OBJECT_AS_ARRAY);
-
-print_r($client);
-
+switch ($action) {
+    case 'clients':
+        include 'clients.php';
+        break;
+    case 'invoices':
+        include 'invoices.php';
+        break;
+    case 'details':
+        include 'details.php';
+        break;
+    case 'home':
+    default:
+        include 'home.php';
+}
