@@ -48,8 +48,8 @@ function getItem($id)
 
     return [
         'id' => $id,
-        'name' => $faker->words($faker->numberBetween(1, 5)),
-        'description' => $faker->sentences($faker->numberBetween(1, 3)),
+        'name' => implode(' ', $faker->words($faker->numberBetween(1, 5))),
+        'description' => implode(' ', $faker->sentences($faker->numberBetween(1, 3))),
         'quantity' => $quantity,
         'vatRate' => $vatRate,
         'netItemPrice' => $net,
