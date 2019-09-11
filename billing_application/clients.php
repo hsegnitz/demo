@@ -36,7 +36,7 @@ $page = $_GET['page'] ?? 0;
 			}
 
 			$raw = file_get_contents($url);
-			echo "<-- $raw -->";
+			echo "<!-- $raw -->";
             $clients = json_decode($raw, JSON_OBJECT_AS_ARRAY);
 
 			foreach ($clients as $client) {
