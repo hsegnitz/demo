@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "119940af443b237b5b7d6855a4c473eb",
+    "content-hash": "abd2c2dec75478ba96bd8d57e58ea7ae",
     "packages": [
         {
             "name": "herzult/simple-php-easy-plus",
@@ -363,11 +363,17 @@
         },
         {
             "name": "soarce/client",
-            "version": "dev-request-auto-linking",
+            "version": "0.7.0",
             "source": {
                 "type": "git",
-                "url": "/home/hsegnitz/Projects/SOARCE/client",
-                "reference": "3dfaa924597ba48dcd785b2757878b99006523b5"
+                "url": "https://github.com/soarce-qa/soarce-client-php.git",
+                "reference": "134c8c5aae136b2d4ef4563567a7c0de54434b81"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/soarce-qa/soarce-client-php/zipball/134c8c5aae136b2d4ef4563567a7c0de54434b81",
+                "reference": "134c8c5aae136b2d4ef4563567a7c0de54434b81",
+                "shasum": ""
             },
             "require": {
                 "ext-json": "*",
@@ -396,11 +402,7 @@
                     "Soarce\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "UnitTests\\": "tests/PhpUnit_UnitTests/"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -415,28 +417,20 @@
             "description": "This is the client for SOARCE providing and endpoint for external code coverage collection and more.",
             "homepage": "https://github.com/soarce-qa/soarce-client-php",
             "keywords": [
-                "CodeCoverage",
-                "QA",
                 "SOARCE",
-                "Testing",
-                "xdebug"
+                "Xdebug",
+                "codecoverage",
+                "qa",
+                "testing"
             ],
-            "support": {
-                "issues": "https://github.com/soarce-qa/soarce-client-php/issues",
-                "forum": "https://github.com/soarce-qa/soarce-client-php/issues",
-                "wiki": "https://github.com/soarce-qa/soarce-client-php/wiki",
-                "source": "https://github.com/soarce-qa/soarce-client-php",
-                "docs": "https://github.com/soarce-qa/soarce-client-php/wiki"
-            },
-            "time": "2019-09-09T20:58:19+00:00"
+            "time": "2019-09-11T20:56:57+00:00"
         }
     ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
         "herzult/simple-php-easy-plus": 20,
-        "roave/security-advisories": 20,
-        "soarce/client": 20
+        "roave/security-advisories": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
