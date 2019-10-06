@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f07fcad7c90b2c3ce64769586f866f3b",
+    "content-hash": "d7ef429b17ef84aebf1b3769c5fdadf4",
     "packages": [
         {
             "name": "fzaninotto/faker",
@@ -368,35 +368,35 @@
         },
         {
             "name": "soarce/client",
-            "version": "0.7.0",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/soarce-qa/soarce-client-php.git",
-                "reference": "134c8c5aae136b2d4ef4563567a7c0de54434b81"
+                "reference": "339470b1746d6659db2f150db0988d5e111701ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/soarce-qa/soarce-client-php/zipball/134c8c5aae136b2d4ef4563567a7c0de54434b81",
-                "reference": "134c8c5aae136b2d4ef4563567a7c0de54434b81",
+                "url": "https://api.github.com/repos/soarce-qa/soarce-client-php/zipball/339470b1746d6659db2f150db0988d5e111701ec",
+                "reference": "339470b1746d6659db2f150db0988d5e111701ec",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "fastbill/parallel-process-dispatcher": "^1.2.1",
-                "php": ">=7.1,<8.0-DEV",
+                "php": ">=5.4,<8.0-DEV",
                 "predis/predis": "^1.1"
             },
             "require-dev": {
                 "jakub-onderka/php-parallel-lint": "^1.0",
-                "m6web/redis-mock": "^4.6",
+                "m6web/redis-mock": "^2.8",
                 "pdepend/pdepend": "^2.5",
-                "phploc/phploc": "*",
+                "phploc/phploc": "^2.1",
                 "phpmd/phpmd": "^2.6",
-                "phpunit/phpunit": "*",
+                "phpunit/phpunit": "^4.8",
                 "roave/security-advisories": "dev-master",
-                "sebastian/phpcpd": "^4.1",
+                "sebastian/phpcpd": "^2.0",
                 "squizlabs/php_codesniffer": "^3.4",
-                "theseer/phpdox": "^0.12.0"
+                "theseer/phpdox": "^0.8.1.1"
             },
             "type": "library",
             "autoload": {
@@ -428,16 +428,22 @@
                 "qa",
                 "testing"
             ],
-            "time": "2019-09-11T20:56:57+00:00"
+            "time": "2019-09-29T10:26:53+00:00"
         }
     ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "php": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": []
+    "platform": {
+        "php": ">=5.6,<7.0-DEV"
+    },
+    "platform-dev": [],
+    "platform-overrides": {
+        "php": "5.6"
+    }
 }

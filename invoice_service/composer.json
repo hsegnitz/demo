@@ -1,9 +1,19 @@
 {
-    "require": {
-        "fzaninotto/faker": "^1.8"
-    },
-    "require-dev": {
-        "roave/security-advisories": "dev-master",
-        "soarce/client": "^0.7"
+  "repositories": [
+    { "type": "vcs", "url": "https://github.com/soarce-qa/parallel-process-dispatcher.git" }
+  ],
+  "config": {
+    "platform": {
+      "php": "5.3.9"
     }
+  },
+  "require": {
+    "php": ">=5.3.9,<5.4-DEV",
+    "fzaninotto/faker": "^1.8"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-master",
+    "soarce/client": "^1.0",
+    "fastbill/parallel-process-dispatcher": "dev-legacy/5.3"
+  }
 }

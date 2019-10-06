@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f07fcad7c90b2c3ce64769586f866f3b",
+    "content-hash": "f164470358c4464fd77d9402cb6e756d",
     "packages": [
         {
             "name": "fzaninotto/faker",
@@ -60,46 +60,51 @@
     "packages-dev": [
         {
             "name": "fastbill/parallel-process-dispatcher",
-            "version": "1.2.1",
+            "version": "dev-legacy/5.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/fastbill/parallel-process-dispatcher.git",
-                "reference": "9f4d0b91695e7a5940732d639eaea0c2f984be9c"
+                "url": "https://github.com/soarce-qa/parallel-process-dispatcher.git",
+                "reference": "cb60a90ea5f09a22a0d7630b76db2e1ed8f3dee6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fastbill/parallel-process-dispatcher/zipball/9f4d0b91695e7a5940732d639eaea0c2f984be9c",
-                "reference": "9f4d0b91695e7a5940732d639eaea0c2f984be9c",
+                "url": "https://api.github.com/repos/soarce-qa/parallel-process-dispatcher/zipball/cb60a90ea5f09a22a0d7630b76db2e1ed8f3dee6",
+                "reference": "cb60a90ea5f09a22a0d7630b76db2e1ed8f3dee6",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4,<8.0-DEV"
+                "php": ">=5.3"
             },
             "require-dev": {
                 "jakub-onderka/php-parallel-lint": "*",
-                "pdepend/pdepend": "*",
-                "phploc/phploc": "*",
+                "pdepend/pdepend": "^2.5",
+                "phploc/phploc": "^2.1",
                 "phpmd/phpmd": "*",
-                "phpunit/phpunit": "*",
-                "sebastian/phpcpd": "*",
+                "phpunit/phpunit": "^4.8",
+                "sebastian/phpcpd": "^2.0",
                 "squizlabs/php_codesniffer": "*",
-                "theseer/phpdox": "*"
+                "theseer/phpdox": "0.8.1.1"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "FastBill\\ParallelProcessDispatcher\\": "src/FastBill/ParallelProcessDispatcher"
+                    "FastBill\\ParallelProcessDispatcher\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Holger Segnitz",
                     "email": "hsegnitz@fastbill.com"
                 }
             ],
-            "description": "module for running cli-processes in parallel",
-            "time": "2017-12-05T19:26:08+00:00"
+            "description": "Tiny PHP library for running jobs in background and/or in parallel",
+            "support": {
+                "source": "https://github.com/soarce-qa/parallel-process-dispatcher/tree/legacy/5.3"
+            },
+            "time": "2019-09-29T10:41:52+00:00"
         },
         {
             "name": "predis/predis",
@@ -368,35 +373,35 @@
         },
         {
             "name": "soarce/client",
-            "version": "0.7.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/soarce-qa/soarce-client-php.git",
-                "reference": "134c8c5aae136b2d4ef4563567a7c0de54434b81"
+                "reference": "63c74c6f6501fe43e7dc575c3063cd825b082597"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/soarce-qa/soarce-client-php/zipball/134c8c5aae136b2d4ef4563567a7c0de54434b81",
-                "reference": "134c8c5aae136b2d4ef4563567a7c0de54434b81",
+                "url": "https://api.github.com/repos/soarce-qa/soarce-client-php/zipball/63c74c6f6501fe43e7dc575c3063cd825b082597",
+                "reference": "63c74c6f6501fe43e7dc575c3063cd825b082597",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "fastbill/parallel-process-dispatcher": "^1.2.1",
-                "php": ">=7.1,<8.0-DEV",
+                "fastbill/parallel-process-dispatcher": "dev-legacy/5.3",
+                "php": ">=5.3,<8.0-DEV",
                 "predis/predis": "^1.1"
             },
             "require-dev": {
                 "jakub-onderka/php-parallel-lint": "^1.0",
-                "m6web/redis-mock": "^4.6",
+                "m6web/redis-mock": "^2.8",
                 "pdepend/pdepend": "^2.5",
-                "phploc/phploc": "*",
-                "phpmd/phpmd": "^2.6",
-                "phpunit/phpunit": "*",
+                "phploc/phploc": "^2.1",
+                "phpmd/phpmd": "^2.7",
+                "phpunit/phpunit": "^4.8",
                 "roave/security-advisories": "dev-master",
-                "sebastian/phpcpd": "^4.1",
-                "squizlabs/php_codesniffer": "^3.4",
-                "theseer/phpdox": "^0.12.0"
+                "sebastian/phpcpd": "^2.0",
+                "squizlabs/php_codesniffer": "^2.9",
+                "theseer/phpdox": "0.8.1.1"
             },
             "type": "library",
             "autoload": {
@@ -428,16 +433,23 @@
                 "qa",
                 "testing"
             ],
-            "time": "2019-09-11T20:56:57+00:00"
+            "time": "2019-09-29T10:44:24+00:00"
         }
     ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "roave/security-advisories": 20
+        "php": 20,
+        "roave/security-advisories": 20,
+        "fastbill/parallel-process-dispatcher": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": []
+    "platform": {
+        "php": ">=5.3.9,<5.4-DEV"
+    },
+    "platform-dev": [],
+    "platform-overrides": {
+        "php": "5.3.9"
+    }
 }

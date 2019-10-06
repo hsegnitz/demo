@@ -1,6 +1,13 @@
-FROM php:7.2-apache
+FROM php:5.6-apache
 
 MAINTAINER Holger Segnitz <holger@segnitz.net>
 
-RUN pecl install -f -o xdebug
-RUN docker-php-ext-enable xdebug.so
+RUN apt-get update && apt-get install -y git
+
+RUN git clone https://github.com/xdebug/xdebug.git \
+&& cd xdebug \
+&& git checkout tags/XDEBUG_2_5_5 \
+&& phpize \
+&& ./configure --enable-xdebug \
+&& make \
+&& make install
