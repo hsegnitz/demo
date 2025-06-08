@@ -1,15 +1,15 @@
 {
   "config": {
     "platform": {
-      "php": "7.0"
+      "php": "7.2"
     }
   },
   "require": {
-    "php": ">=7.0,<7.1-DEV",
+    "php": ">=7.2,<7.3-DEV",
     "herzult/simple-php-easy-plus": "dev-master"
   },
   "require-dev": {
-    "roave/security-advisories": "dev-master",
-    "soarce/client": "^3.0"
+    "roave/security-advisories": "dev-latest",
+    "soarce/client": "*"
   }
 }

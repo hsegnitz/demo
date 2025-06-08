@@ -1,5 +1,8 @@
 <?php
 
+#phpinfo(); die();
+
+
 require_once 'vendor/autoload.php';
 
 $action = $_GET['action'] ?? 'home';

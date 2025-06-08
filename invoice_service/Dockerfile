@@ -1,13 +1,6 @@
-FROM php:5.3-apache
+FROM php:8.1-apache
 
 MAINTAINER Holger Segnitz <holger@segnitz.net>
 
-#RUN apt-get update && apt-get install -y git
-
-RUN git clone https://github.com/xdebug/xdebug.git \
-&& cd xdebug \
-&& git checkout tags/XDEBUG_2_2_7 \
-&& phpize \
-&& ./configure --enable-xdebug \
-&& make \
-&& make install
+RUN pecl install -f -o xdebug
+RUN docker-php-ext-enable xdebug.so
