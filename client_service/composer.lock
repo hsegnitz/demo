@@ -193,16 +193,16 @@
     "packages-dev": [
         {
             "name": "predis/predis",
-            "version": "v1.1.1",
+            "version": "v1.1.10",
             "source": {
                 "type": "git",
-                "url": "https://github.com/nrk/predis.git",
-                "reference": "f0210e38881631afeafb56ab43405a92cafd9fd1"
+                "url": "https://github.com/predis/predis.git",
+                "reference": "a2fb02d738bedadcffdbb07efa3a5e7bd57f8d6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nrk/predis/zipball/f0210e38881631afeafb56ab43405a92cafd9fd1",
-                "reference": "f0210e38881631afeafb56ab43405a92cafd9fd1",
+                "url": "https://api.github.com/repos/predis/predis/zipball/a2fb02d738bedadcffdbb07efa3a5e7bd57f8d6e",
+                "reference": "a2fb02d738bedadcffdbb07efa3a5e7bd57f8d6e",
                 "shasum": ""
             },
             "require": {
@@ -229,17 +229,33 @@
                 {
                     "name": "Daniele Alessandri",
                     "email": "suppakilla@gmail.com",
-                    "homepage": "http://clorophilla.net"
+                    "homepage": "http://clorophilla.net",
+                    "role": "Creator & Maintainer"
+                },
+                {
+                    "name": "Till Krüss",
+                    "homepage": "https://till.im",
+                    "role": "Maintainer"
                 }
             ],
             "description": "Flexible and feature-complete Redis client for PHP and HHVM",
-            "homepage": "http://github.com/nrk/predis",
+            "homepage": "http://github.com/predis/predis",
             "keywords": [
                 "nosql",
                 "predis",
                 "redis"
             ],
-            "time": "2016-06-16T16:22:20+00:00"
+            "support": {
+                "issues": "https://github.com/predis/predis/issues",
+                "source": "https://github.com/predis/predis/tree/v1.1.10"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/tillkruss",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-01-05T17:46:08+00:00"
         },
         {
             "name": "roave/security-advisories",
@@ -1189,16 +1205,16 @@
         },
         {
             "name": "soarce/client",
-            "version": "4.1.0",
+            "version": "4.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/soarce-qa/soarce-client-php.git",
-                "reference": "fc98c42d04be97e2471fd6207a9fcb3c27a16bd5"
+                "reference": "9c9e36e3995797af487797a993a4882fca82e4cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/soarce-qa/soarce-client-php/zipball/fc98c42d04be97e2471fd6207a9fcb3c27a16bd5",
-                "reference": "fc98c42d04be97e2471fd6207a9fcb3c27a16bd5",
+                "url": "https://api.github.com/repos/soarce-qa/soarce-client-php/zipball/9c9e36e3995797af487797a993a4882fca82e4cd",
+                "reference": "9c9e36e3995797af487797a993a4882fca82e4cd",
                 "shasum": ""
             },
             "require": {
@@ -1249,7 +1265,7 @@
                 "source": "https://github.com/soarce-qa/soarce-client-php",
                 "wiki": "https://github.com/soarce-qa/soarce-client-php/wiki"
             },
-            "time": "2025-06-08T22:45:49+00:00"
+            "time": "2025-06-08T23:10:20+00:00"
         },
         {
             "name": "soarce/parallel-process-dispatcher",
