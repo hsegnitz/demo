@@ -1,8 +1,4 @@
 {
-  "repositories": [
-    { "type": "vcs", "url": "https://github.com/soarce-qa/parallel-process-dispatcher.git" },
-    { "type": "vcs", "url": "../../soarce-client-php" }
-  ],
   "config": {
     "platform": {
       "php": "8.1"
@@ -14,6 +10,6 @@
   },
   "require-dev": {
     "roave/security-advisories": "dev-master",
-    "soarce/client": "dev-master"
+    "soarce/client": "^5.0"
   }
 }
